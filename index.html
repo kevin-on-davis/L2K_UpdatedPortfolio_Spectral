@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background-color: black;
+        color: lightskyblue;
+      }
+
+      button {
+        width: 15vw;
+        text-align: center;
+        position: center;
+        margin: 1vw;
+        background-color: lightskyblue;
+        color: white;
+      }
+      .photo-header img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        box-shadow:
+            0 0 250px 250px white,  /* inner white */
+            0 0 100px 60px lightskyblue, /* middle lightskyblue */
+            0 0 140px 90px black; /* outer black */
+        display: flex;
+        align-self: flex-start;
+        object-fit: cover;
+        margin-top: 5px;
+        border: 6px solid black;
+        box-shadow: rgba(70, 68, 68, 0.3) 4px 1px 20px 4px;
+      }
+
+      #abt_content,
+      #delta_title,
+      #profile_info,
+      #portfolio_content
+       {
+        background-color: black;
+        color: lightskyblue;
+      }
+
+      .panel-footer {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding-bottom:2vw; 
+        color:lightskyblue; width:100%
+      }
+
+      .panel{
+        background-color: black;
+        color: white;
+      }
+
+.glow {
+  color: lightskyblue;
+  text-shadow: 2px 2px 4px white;
+}
+
+  </style>
+  </head>
+
+  <body>
+    <div class="row" style="margin:2vw">
+      <div class="panel panel-default" style="background-color: black">
+        <!-- <div class="panel-heading text-left"
+                style="background-color: darkcyan; color:white; padding-bottom:1vw; width:100%">
+                <h1 class="row">
+                    <div class="col-sm-4" style="padding-left: 2vw">Kevin Davis </div>
+                    <div class="col-sm-8 text-left" id="skill_descriptor">
+                </h1>
+            </div> -->
+
+        <div class="panel-body col">
+          <!-- <div id="btn_hldr_parent" class="col-3">
+                </div> -->
+          <div
+            id="picture_col"
+            class="photo-header img container col-12"
+            style="color:lightskyblue"
+          >
+          <div class="row">
+            <div class="col-sm-4">
+              <img
+                class="d-block photo-header img"
+                src="https://qph.fs.quoracdn.net/main-qimg-1d5173a04d015a0ed4ea63da9b855f25"
+                width="100%"
+                data-holder-rendered="true"
+              />
+              <div class="overlay text-center glow"></div>
+              <span>Bringing Together Different Perspectives</span>
+            </div>
+
+            <div class="col-sm-4" style="font-size:4em">
+                <span class="col-sm-12 glow"></h3>Kevin Davis</span>
+            </div>
+            <div class="col-sm-4 text-left glow" id="skill_descriptor" style="font-size:4em"></div>
+              
+            </div>
+            </div>
+            <!-- <div class="overlay text-center">
+              <h3>Bringing Together Different Perspectives</h3>
+            </div> -->
+          </div>
+          <div class="col-3" style="padding:1vw">
+            <h6 class="glow">Course Completion</h6>
+            <div
+              style="width:90%; height:100%; border:solid; display: flex; align-items: flex-end"
+            >
+              <div
+                id="completion_pct"
+                style="height:100%; position:relative; text-align: center; bottom: 0; background-color:lightskyblue; width:0%; border:solid"
+              >
+                <p class="center"></p>
+              </div>
+            </div>
+          </div>
+          <div class="row  glow" style="width:100%">
+            <div class="col-3">
+              <div id="btn_holder" style="padding-left:25%">
+                <div>
+                  <button id="aboutme" class="btn-sm">
+                    About Me
+                  </button>
+                </div>
+                <div>
+                  <button id="mywork" class="btn-sm">
+                    My Work
+                  </button>
+                </div>
+                <div>
+                  <button id="myresume" class="btn-sm">
+                    <a href="./KevinDavisResume.pdf">My Resume</a>
+                  </button>
+                </div>
+                <div>
+                  <button id="mylinkedin" class="btn-sm">
+                    <a href="https://www.linkedin.com/in/kevin-davis-133b641/"
+                      >LinkedIn Profile</a
+                    >
+                  </button>
+                </div>
+                <div>
+                  <button id="mygithub" class="btn-sm">
+                    <a href="https://github.com/kevin-on-davis"
+                      >GitHub Profile</a
+                    >
+                  </button>
+                </div>
+                <div>
+                  <button id="contactme" class="btn-sm">
+                    <a href="mailto:kevin.on.davis@gmail.com">Email</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div id="portfolio_content" class="col-8">
+              <div
+                id="abt_content"
+                style="display:block; position:sticky; top:0; height: 100%; width:100%"
+              >
+                <div>
+                  <h3
+                    id="delta_title"
+                    style="position:sticky; top:0; left:0; width:100%"
+                  >
+                    About Me
+                  </h3>
+                </div>
+                <div id="profile_info" class="row" style=" height:80%">
+                  <div class="col-3" style="position:sticky; top: 0; left: 0">
+                    <img
+                      id="profilepic"
+                      src="assets/Profilepic.jpg"
+                      width="80%"
+                    />
+                  </div>
+
+                  <div class="col-9" id="delta_content">
+                    <p style="width:100%">
+                      IT professional with extensive experience in Oracle
+                      technology and strengths in PL/SQL and SQL development,
+                      GUI development utilizing Oracle Application Express,
+                      Oracle Forms and Reports. Created complete end-to-end
+                      Oracle Apex commercial solution to replace obsolete
+                      application as well as modernizing business practices
+                      using a variety of tools. Experienced in design,
+                      development and implementation of solutions to solve
+                      complex challenges. Worked in a range of industries
+                      including education, HR, education, energy, shipping and
+                      manufacturing. Possess excellent writing, research and
+                      problem-solving skills in both functional and technical
+                      areas, demonstrated through the delivery of various
+                      projects as part of development teams, on solo and remote
+                      projects.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="panel-footer">
+          Copyright © 2019
+        </div>
+      </div>
+    </div>
+    <script src="./indexScript.js"></script>
+  </body>
+</html>
