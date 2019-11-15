@@ -91,6 +91,12 @@ btn_MyWork.on("click", function() {
       <a href="https://kevin-on-davis.github.io/ResponsivePasswordGenerator/">Deployed Application</a><br />
       <a href="https://github.com/kevin-on-davis/ResponsivePasswordGenerator">GitHub Repository</a></p>
     </div>
+    <div class="col-4">
+      <a href="./assets/TeamGenerator.png" class="app_icon" target="#"><img src="./assets/TeamGenerator.png" width="100vw"></a>
+      <p>Node : Team Generator<br/>
+      <a href="https://kevin-on-davis.github.io/L2K_TeamStructureGenerator/">Deployed Application</a><br />
+      <a href="https://github.com/kevin-on-davis/L2K_TeamStructureGenerator">GitHub Repository</a></p>
+    </div>
     </div>`
   );
 });
