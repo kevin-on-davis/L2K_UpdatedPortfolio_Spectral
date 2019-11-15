@@ -31,9 +31,9 @@
         width: 15vw;
         text-align: center;
         position: center;
-        margin: 1vw;
+        margin-bottom: 1vw;
         background-color: lightskyblue;
-        color: white;
+        color: black;
       }
       .photo-header img {
         width: 250px;
@@ -73,10 +73,21 @@
         color: white;
       }
 
-.glow {
-  color: lightskyblue;
-  text-shadow: 2px 2px 4px white;
-}
+      #completion_pct {
+        height:100%; 
+        position:relative; 
+        text-align: center; 
+        bottom: 0; 
+        background-color:lightskyblue; 
+        color: black;
+        width:0%; 
+        border:solid"
+      }
+
+      .glow{
+        color: lightskyblue;
+        text-shadow: 2px 2px 4px white;
+      }
 
   </style>
   </head>
@@ -84,17 +95,8 @@
   <body>
     <div class="row" style="margin:2vw">
       <div class="panel panel-default" style="background-color: black">
-        <!-- <div class="panel-heading text-left"
-                style="background-color: darkcyan; color:white; padding-bottom:1vw; width:100%">
-                <h1 class="row">
-                    <div class="col-sm-4" style="padding-left: 2vw">Kevin Davis </div>
-                    <div class="col-sm-8 text-left" id="skill_descriptor">
-                </h1>
-            </div> -->
 
         <div class="panel-body col">
-          <!-- <div id="btn_hldr_parent" class="col-3">
-                </div> -->
           <div
             id="picture_col"
             class="photo-header img container col-12"
@@ -108,39 +110,36 @@
                 width="100%"
                 data-holder-rendered="true"
               />
-              <div class="overlay text-center glow"></div>
+              <div class="overlay text-center"></div>
               <span>Bringing Together Different Perspectives</span>
             </div>
 
             <div class="col-sm-4" style="font-size:4em">
-                <span class="col-sm-12 glow"></h3>Kevin Davis</span>
+                <span class="col-sm-12"></h3>Kevin Davis</span>
+                <div class="col" style="padding:1vw">
+                  <h6>Course Completion</h6>
+                  <div
+                    style="height:25%; border:solid; display: flex; align-items: flex-end"
+                  >
+                    <div
+                      id="completion_pct"
+                      style="height:25%; position:relative; text-align: center; bottom: 0; background-color:lightskyblue; width:0%; border:solid"
+                    >
+                      <p class="center"></p>
+                    </div>
+                  </div>
+                </div>
             </div>
-            <div class="col-sm-4 text-left glow" id="skill_descriptor" style="font-size:4em"></div>
+            <div class="col-sm-4 text-left" id="skill_descriptor" style="font-size:4em"></div>
               
             </div>
             </div>
-            <!-- <div class="overlay text-center">
-              <h3>Bringing Together Different Perspectives</h3>
-            </div> -->
           </div>
-          <div class="col-3" style="padding:1vw">
-            <h6 class="glow">Course Completion</h6>
-            <div
-              style="width:90%; height:100%; border:solid; display: flex; align-items: flex-end"
-            >
-              <div
-                id="completion_pct"
-                style="height:100%; position:relative; text-align: center; bottom: 0; background-color:lightskyblue; width:0%; border:solid"
-              >
-                <p class="center"></p>
-              </div>
-            </div>
-          </div>
-          <div class="row  glow" style="width:100%">
+          <div class="row " style="width:100%; margin-bottom: 1em; padding-left: 2vw;">
             <div class="col-3">
-              <div id="btn_holder" style="padding-left:25%">
+              <div id="btn_holder">
                 <div>
-                  <button id="aboutme" class="btn-sm">
+                  <button id="aboutme" class="btn-sm"  style="margin-top: 1em">
                     About Me
                   </button>
                 </div>

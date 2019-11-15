@@ -28,7 +28,7 @@ var skill = [
   "Node JS"
 ];
 var skill_idx = 0;
-$("#skill_descriptor").html(skill[skill_idx]);
+progress_bar(new Date("September 23 2019"), new Date("December 18 2019"));
 
 var marquee = setInterval(function() {
   if (skill_idx < skill.length - 1) {
@@ -37,23 +37,27 @@ var marquee = setInterval(function() {
     skill_idx = 0;
   }
 
+  progress_bar(new Date("September 23 2019"), new Date("December 18 2019"));
+}, 5000);
+
+function progress_bar(startPrd, endPrd) {
   let today = new Date();
-  let start_prd = new Date("September 23 2019"); // Set day and month
-  let end_prd = new Date("December 18 2019"); // Set day and month
+  // let start_prd = new Date("September 23 2019"); // Set day and month
+  // let end_prd = new Date("December 18 2019"); // Set day and month
   let msPerDay = 24 * 60 * 60 * 1000; // Number of milliseconds per day
-  let days_elapsed = Math.round((today - start_prd) / msPerDay);
-  let total_days = Math.round((end_prd - start_prd) / msPerDay);
+  let days_elapsed = Math.round((today - startPrd) / msPerDay);
+  let total_days = Math.round((endPrd - startPrd) / msPerDay);
   $("#completion_pct").css(
     "width",
     Math.floor((days_elapsed / total_days) * 100) + "%"
   );
   $("#completion_pct").css("text-center");
   $("#completion_pct").text(
-    "Completion : " + Math.floor((days_elapsed / total_days) * 100) + "%"
+    Math.floor((days_elapsed / total_days) * 100) + "%"
   );
 
   $("#skill_descriptor").html(skill[skill_idx]);
-}, 5000);
+}
 
 btn_AboutMe.on("click", function() {
   event.preventDefault();
