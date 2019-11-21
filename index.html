@@ -13,7 +13,10 @@
       href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="./portfolio.css"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -21,75 +24,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>
-      body {
-        background-color: black;
-        color: lightskyblue;
-      }
-
-      button {
-        width: 15vw;
-        text-align: center;
-        position: center;
-        margin-bottom: 1vw;
-        background-color: lightskyblue;
-        color: black;
-      }
-      .photo-header img {
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        box-shadow:
-            0 0 250px 250px white,  /* inner white */
-            0 0 100px 60px lightskyblue, /* middle lightskyblue */
-            0 0 140px 90px black; /* outer black */
-        display: flex;
-        align-self: flex-start;
-        object-fit: cover;
-        margin-top: 5px;
-        border: 6px solid black;
-        box-shadow: rgba(70, 68, 68, 0.3) 4px 1px 20px 4px;
-      }
-
-      #abt_content,
-      #delta_title,
-      #profile_info,
-      #portfolio_content
-       {
-        background-color: black;
-        color: lightskyblue;
-      }
-
-      .panel-footer {
-        text-align: center;
-        background-color: black;
-        color: white;
-        padding-bottom:2vw; 
-        color:lightskyblue; width:100%
-      }
-
-      .panel{
-        background-color: black;
-        color: white;
-      }
-
-      #completion_pct {
-        height:25%; 
-        position:relative; 
-        text-align: center; 
-        bottom: 0; 
-        background-color:lightskyblue; 
-        color: black;
-        width:0%; 
-        border:solid"
-      }
-
-      .glow{
-        color: lightskyblue;
-        text-shadow: 2px 2px 4px white;
-      }
-
-  </style>
   </head>
 
   <body>
@@ -116,14 +50,13 @@
 
             <div class="col-sm-4" style="font-size:4em">
                 <span class="col-sm-12"></h3>Kevin Davis</span>
-                <div class="col" style="padding:1vw; height: 50%">
+                <div  id="progress_div" class="col">
                   <h6>Current Engagement</h6>
-                  <div
-                    style="height:50%; border:solid; display: flex; align-items: flex-end"
+                  <div id="progress_bar"
+                    
                   >
                     <div
                       id="completion_pct"
-                      style="height:100%; font-size: 2vw; position:relative; text-align: center; bottom: 0; background-color:lightskyblue; width:0%; border:solid"
                     >
                       <p class="center"></p>
                     </div>
@@ -135,8 +68,8 @@
             </div>
             </div>
           </div>
-          <div class="row " style="width:100%; margin-bottom: 1em; padding-left: 2vw;">
-            <div class="col-3">
+          <div class="row">
+            <div  id="btn_hldr_div" class="col-3">
               <div id="btn_holder">
                 <div>
                   <button id="aboutme" class="btn-sm"  style="margin-top: 1em">
@@ -150,7 +83,7 @@
                 </div>
                 <div>
                   <button id="myresume" class="btn-sm">
-                    <a href="./KevinDavisResume.pdf">My Resume</a>
+                    <a href="./assets/KevinDavisResume.pdf">My Resume</a>
                   </button>
                 </div>
                 <div>
@@ -182,7 +115,6 @@
                 <div>
                   <h3
                     id="delta_title"
-                    style="position:sticky; top:0; left:0; width:100%"
                   >
                     About Me
                   </h3>

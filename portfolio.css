@@ -1,0 +1,96 @@
+#completion_pct {
+  height: 100%;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  background-color: lightskyblue;
+  color: black;
+  width: 0%;
+  border: solid;
+}
+
+body {
+  background-color: black;
+  color: lightskyblue;
+}
+
+button {
+  width: 15vw;
+  text-align: center;
+  position: center;
+  margin-bottom: 1vw;
+  background-color: lightskyblue;
+  color: black;
+}
+.photo-header img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 250px 250px white,
+    /* inner white */ 0 0 100px 60px lightskyblue,
+    /* middle lightskyblue */ 0 0 140px 90px black; /* outer black */
+  display: flex;
+  align-self: flex-start;
+  object-fit: cover;
+  margin-top: 5px;
+  border: 6px solid black;
+  box-shadow: rgba(70, 68, 68, 0.3) 4px 1px 20px 4px;
+}
+
+#abt_content,
+#delta_title,
+#profile_info,
+#portfolio_content {
+  background-color: black;
+  color: lightskyblue;
+  
+}
+#delta_title{
+   position:sticky; 
+   top:0; left:0; 
+   width:100%
+}
+#abt_content{
+    display:block; 
+    position:sticky; 
+    top:0; 
+    height: 100%; 
+    width:100%"
+}
+
+.panel-footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-bottom: 2vw;
+  color: lightskyblue;
+  width: 100%;
+}
+
+.panel {
+  background-color: black;
+  color: white;
+}
+
+#progress_div {
+  padding: 1vw;
+  height: 30%;
+}
+
+#progress_bar {
+  height: 50%;
+  border: solid;
+  display: flex;
+  align-items: flex-end;
+}
+
+#btn_hldr_div {
+  width: 100%;
+  margin-bottom: 1em;
+  padding-left: 2vw;
+  align-items: center;
+  justify-content: space-evenly;
+}
